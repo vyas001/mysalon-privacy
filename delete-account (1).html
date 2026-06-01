@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delete Account — MySalon</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --cream: #fdf8f3;
+      --brown: #2c1810;
+      --accent: #c8956c;
+      --muted: #8a7060;
+      --border: #e8ddd4;
+      --danger: #c0392b;
+      --danger-light: #fdf0ee;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: var(--brown);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 0 2rem;
+      text-align: center;
+      background: #fff;
+    }
+
+    header .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-top: 0.4rem;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .warning-box {
+      background: var(--danger-light);
+      border: 1px solid #f5c6c2;
+      border-left: 4px solid var(--danger);
+      border-radius: 4px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.9rem;
+      color: #7b2020;
+    }
+
+    .warning-box strong { font-weight: 500; }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: var(--brown);
+    }
+
+    p { font-size: 0.95rem; color: #4a3728; margin-bottom: 0.8rem; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0.8rem;
+    }
+
+    ul li {
+      font-size: 0.9rem;
+      color: #4a3728;
+      padding: 0.25rem 0 0.25rem 1.4rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .email-button {
+      display: inline-block;
+      background: var(--brown);
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      border: none;
+    }
+
+    .email-button:hover { background: #3d2518; }
+
+    .note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 2rem 1.2rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MySalon</div>
+  <h1>Delete My Account</h1>
+</header>
+
+<main>
+
+  <div class="warning-box">
+    <strong>⚠️ This action is permanent.</strong> Deleting your account will remove all your data and cannot be undone.
+  </div>
+
+  <div class="card">
+    <h2>What gets deleted</h2>
+    <p>When you request account deletion, the following data will be permanently removed:</p>
+    <ul>
+      <li>Your account profile (name, email, phone number)</li>
+      <li>Your booking history</li>
+      <li>Your reviews and ratings</li>
+      <li>Portfolio images (for stylists)</li>
+      <li>Salon and technician data linked to your account</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>How to request deletion</h2>
+    <p>Send us an email from the address associated with your MySalon account. We will process your request within <strong>7 business days</strong>.</p>
+    <a class="email-button" href="mailto:capybara.inc.dev@gmail.com?subject=Account Deletion Request — MySalon&body=Hi, I would like to permanently delete my MySalon account and all associated data.%0A%0ARegistered email: [your registered email here]">
+      Request Account Deletion
+    </a>
+    <p class="note">Clicking the button opens your email app with a pre-filled message. Just add your registered email and send.</p>
+  </div>
+
+
+</main>
+
+<footer>
+  &copy; 2026 Capybara. All rights reserved. &nbsp;·&nbsp; MySalon
+</footer>
+
+</body>
+</html>
